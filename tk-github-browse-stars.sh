@@ -9,7 +9,7 @@ cat names | sort | uniq -c | sort -r -k1 > cnt-uniq-names
 cat names | sort -u > only-uniq-names
 
 function open_and_delay {
-	google-chrome "https://github.com/${1}" &
+	chromium "https://github.com/${1}" &
 	sleep 1
 }
 
